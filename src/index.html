@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Abbie Essentials</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="bg-[#f8f1eb] shadow-sm">
+      <div class="flex items-center justify-between px-6 md:px-10 py-3">
+        <!-- Logo -->
+        <div>
+          <img
+            class="w-28 md:w-32"
+            src="./images/logo 3.svg"
+            alt="Abbie Essentials Logo"
+          />
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:block">
+          <ul
+            class="flex gap-x-10 xl:gap-x-12 text-base font-medium font-[Poppins]"
+          >
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >CATEGORY</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >SHOP</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-500 transition-colors"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger Button (mobile only) -->
+        <button
+          id="hamburger"
+          class="lg:hidden flex flex-col gap-[5px] p-2 cursor-pointer"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span
+            id="bar1"
+            class="block w-6 h-[2px] bg-[#3d2b1f] rounded transition-all duration-300"
+          ></span>
+          <span
+            id="bar2"
+            class="block w-6 h-[2px] bg-[#3d2b1f] rounded transition-all duration-300"
+          ></span>
+          <span
+            id="bar3"
+            class="block w-6 h-[2px] bg-[#3d2b1f] rounded transition-all duration-300"
+          ></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav
+        id="mobileMenu"
+        class="lg:hidden overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out border-t border-[#e8ddd4]"
+        aria-label="Mobile navigation"
+      >
+        <ul class="flex flex-col font-[Poppins] font-medium text-sm pb-4">
+          <li>
+            <a
+              href="#"
+              class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
+              >CATEGORY</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
+              >SHOP</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
+              >ABOUT US</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hidden relative w-full md:block">
+      <div class="flex flex-col-reverse md:flex-col">
+        <img
+          class="h-[500px] w-full object-cover"
+          src="./images/background.png"
+          alt="Hero background"
+        />
+      </div>
+
+      <div
+        class="absolute inset-0 flex flex-col justify-center px-10 md:px-20 bg-black/20"
+      >
+        <h3 class="text-[#f38516ec] font-[didot] text-lg">
+          WELCOME TO ABBIE ESSENTIALS
+        </h3>
+        <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+          Luxury
+          <span class="text-[#e17509] font-serif italic">Essentials</span>
+          <br />
+          For Everyone
+        </h1>
+
+        <p class="max-w-md py-4 text-white text-lg">
+          Discover elegant fashion, beauty, and lifestyle pieces curated to
+          elevate your everyday style.
+        </p>
+
+        <div>
+          <button
+            class="bg-[#e17509] text-white text-[lora] px-6 py-3 rounded-full hover:bg-orange-600"
+          >
+            Explore Products
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="block relative w-full h-screen md:h-[500px] md:hidden">
+      <!-- Background image -->
+      <img
+        src="./images/mobile bg.png"
+        alt="Hero background"
+        class="absolute inset-0 w-full h-full object-cover object-top md:object-right"
+      />
+
+      <!-- Gradient overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"
+      ></div>
+
+      <!-- Text content -->
+      <div class="absolute bottom-10 left-0 w-full px-6 md:px-20 z-10">
+        <h3 class="text-[#f38516ec] font-[didot] text-sm md:text-lg mb-2">
+          WELCOME TO ABBIE ESSENTIALS
+        </h3>
+
+        <h1 class="text-3xl md:text-6xl font-bold text-white leading-tight">
+          Luxury
+          <span class="text-[#e17509] font-serif italic">Essentials</span>
+          <br />
+          For Everyone
+        </h1>
+
+        <p class="max-w-md py-4 text-white text-base md:text-lg">
+          Discover elegant fashion, beauty, and lifestyle pieces curated to
+          elevate your everyday style.
+        </p>
+
+        <button
+          class="bg-[#e17509] text-white px-6 py-3 rounded-full hover:bg-orange-600 transition"
+        >
+          Explore Products
+        </button>
+      </div>
+    </section>
+
+    <!-- What we offer Section -->
+    <section class="py-4 px-4 bg-[#f8f1eb]">
+      <div class="text-center py-3">
+        <div class="text-lg font-mono text-orange-500 font-bold py-2">
+          WHAT WE OFFER
+        </div>
+        <div class="text-4xl font-[Poppins]">Our Product Categories</div>
+      </div>
+
+      <!-- Product Category Grid -->
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto"
+      >
+        <!--1-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/wears.jpeg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/JEMA GER 1722-10.jpg" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              WEARS
+            </p>
+          </div>
+        </div>
+        <!--2-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/bags.avif"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/533.jpg" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              Bags
+            </p>
+          </div>
+        </div>
+        <!--3-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/1776839269040-perfume-517preview.webp"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/pefume svg.jfif" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              PERFUMES
+            </p>
+          </div>
+        </div>
+        <!--4-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/45-456743_caps-png-transparent-png.png"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/caps - Copy.jfif" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              CAPS
+            </p>
+          </div>
+        </div>
+        <!--5-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/wrist watch.jpeg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img
+                class="w-4 h-4"
+                src="./images/customized watch.jpeg"
+                alt=""
+              />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              WRISTWATCH
+            </p>
+          </div>
+        </div>
+        <!--6-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/customized watch.jpeg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/wrist watch.jpeg" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              ENGRAVED JEWELRIES
+            </p>
+          </div>
+        </div>
+        <!--7-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/images (1).jfif"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/images.jfif" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              RINGS
+            </p>
+          </div>
+        </div>
+        <!--8-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/slides.jpg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img
+                class="w-4 h-4"
+                src="./images/slide svg - Copy.jfif"
+                alt=""
+              />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              SLIDES
+            </p>
+          </div>
+        </div>
+        <!--9-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/pngtree-track-shoes-png-image_6880451.png"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/shoess - Copy.png" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              SHOES
+            </p>
+          </div>
+        </div>
+        <!--10-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/face mask.jpeg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/533.jpg" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              FACE SHEET
+            </p>
+          </div>
+        </div>
+        <!--11-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/lips mask - Copy.jfif"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/lips.jfif" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              LIPS MASK
+            </p>
+          </div>
+        </div>
+        <!--12-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/facemask.jpeg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/eyes.png" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              EYES MASK
+            </p>
+          </div>
+        </div>
+        <!--13-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/lips.jfif"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/lip sticks.jfif" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              LIPS BALM
+            </p>
+          </div>
+        </div>
+        <!--14-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/crocs.jpeg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/crocs.jpeg" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              CROCS
+            </p>
+          </div>
+        </div>
+        <!--15-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/ai-generated-black-patent-high-heel-shoes-on-transparent-background-stock-png.webp"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/heels svg.jfif" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              HEELS
+            </p>
+          </div>
+        </div>
+        <!--16-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/lips balm.jpeg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/lips balm.jpeg" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              LIP CARE PRODUCTS
+            </p>
+          </div>
+        </div>
+        <!--17-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/GLASS.jpeg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/GLASS.jpeg" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              SUN GLASSES
+            </p>
+          </div>
+        </div>
+        <!--18-->
+        <div
+          class="card-hover bg-white border border-stone-200 rounded-xl overflow-hidden cursor-pointer"
+        >
+          <div
+            class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="./images/gift box.jpeg"
+              alt="Bags"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="px-3 pt-5 pb-3 relative">
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-white border border-stone-200 rounded-full flex items-center justify-center shadow-sm"
+            >
+              <img class="w-4 h-4" src="./images/gift box.jpeg" alt="" />
+            </div>
+            <p
+              class="text-center text-[10px] font-medium tracking-[0.14em] uppercase text-stone-500 mt-1"
+            >
+              GIFT BOXES
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--body -->
+    <section class="py-2 bg-[#f8f1eb]">
+      <div>
+        <img
+          class="lg:h-[400px] w-full object-cover"
+          src="./images/bdoy section.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!--Why Shop with us-->
+    <section class="py-10 bg-[#f8f1eb]">
+      <div class="text-center mb-8">
+        <h2
+          class="font-[Poppins] font-extrabold text-2xl inline-block relative"
+        >
+          WHY SHOP WITH US
+          <span
+            class="block h-1 w-20 bg-orange-500 mx-auto mt-2 rounded"
+          ></span>
+        </h2>
+      </div>
+
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto px-4"
+      >
+        <div
+          class="bg-white border border-stone-200 rounded-2xl flex flex-col items-center text-center px-4 py-6 gap-3 cursor-pointer hover:-translate-y-1 hover:border-stone-400 transition-all duration-200"
+        >
+          <div
+            class="w-14 h-14 rounded-full bg-purple-50 flex items-center justify-center"
+          >
+            <img
+              src="./images/world.png"
+              alt="Wide Collection"
+              class="w-12 h-12 object-contain"
+            />
+          </div>
+          <p class="font-mono text-sm font-semibold leading-tight">
+            Wide Collection
+          </p>
+          <p class="text-xs text-stone-400 leading-snug">
+            Everything you need in one place
+          </p>
+        </div>
+
+        <div
+          class="bg-white border border-stone-200 rounded-2xl flex flex-col items-center text-center px-4 py-6 gap-3 cursor-pointer hover:-translate-y-1 hover:border-stone-400 transition-all duration-200"
+        >
+          <div
+            class="w-14 h-14 rounded-full bg-purple-50 flex items-center justify-center"
+          >
+            <img
+              src="./images/high-quality.png"
+              alt="Wide Collection"
+              class="w-14 h-14 object-contain"
+            />
+          </div>
+          <p class="font-mono text-sm font-semibold leading-tight">
+            Best Quality
+          </p>
+          <p class="text-xs text-stone-400 leading-snug">
+            Premium and Authentic Products
+          </p>
+        </div>
+
+        <div
+          class="bg-white border border-stone-200 rounded-2xl flex flex-col items-center text-center px-4 py-6 gap-3 cursor-pointer hover:-translate-y-1 hover:border-stone-400 transition-all duration-200"
+        >
+          <div
+            class="w-14 h-14 rounded-full bg-purple-50 flex items-center justify-center"
+          >
+            <img
+              src="./images/loan.png"
+              alt="Wide Collection"
+              class="w-14 h-14 object-contain"
+            />
+          </div>
+          <p class="font-mono text-sm font-semibold leading-tight">
+            Affordable Luxury
+          </p>
+          <p class="text-xs text-stone-400 leading-snug">
+            Best Price for Top Quality Items
+          </p>
+        </div>
+
+        <div
+          class="bg-white border border-stone-200 rounded-2xl flex flex-col items-center text-center px-4 py-6 gap-3 cursor-pointer hover:-translate-y-1 hover:border-stone-400 transition-all duration-200"
+        >
+          <div
+            class="w-14 h-14 rounded-full bg-purple-50 flex items-center justify-center"
+          >
+            <img
+              src="./images/credit-card.png"
+              alt="Wide Collection"
+              class="w-14 h-14 object-contain"
+            />
+          </div>
+          <p class="font-mono text-sm font-semibold leading-tight">
+            Secure Payment
+          </p>
+          <p class="text-xs text-stone-400 leading-snug">
+            100% Safe and Secure Payment
+          </p>
+        </div>
+
+        <div
+          class="bg-white border border-stone-200 rounded-2xl flex flex-col items-center text-center px-4 py-6 gap-3 cursor-pointer hover:-translate-y-1 hover:border-stone-400 transition-all duration-200"
+        >
+          <div
+            class="w-14 h-14 rounded-full bg-purple-50 flex items-center justify-center"
+          >
+            <img
+              src="./images/fast-delivery.png"
+              alt="Wide Collection"
+              class="w-14 h-14 object-contain"
+            />
+          </div>
+          <p class="font-mono text-sm font-semibold leading-tight">
+            Fast Shipping
+          </p>
+          <p class="text-xs text-stone-400 leading-snug">
+            Quick Delivery Nationwide
+          </p>
+        </div>
+
+        <!-- Repeat above block for: Best Quality, Affordable Luxury, Secure Payment, Fast Shipping -->
+      </div>
+    </section>
+
+    <!--Customer Review-->
+    <section class="py-10 bg-[#f3ece6]">
+      <!-- Heading -->
+      <div class="text-center mb-8">
+        <h2
+          class="font-[Poppins] font-extrabold text-2xl inline-block relative"
+        >
+          WHAT OUR CUSTOMERS SAY
+          <span
+            class="block h-1 w-20 bg-orange-500 mx-auto mt-2 rounded"
+          ></span>
+        </h2>
+      </div>
+
+      <!-- Slider Container -->
+      <div class="relative max-w-4xl mx-auto overflow-hidden">
+        <div
+          id="testimonialSlider"
+          class="flex transition-transform duration-700 ease-in-out"
+        >
+          <!-- Slide 1 -->
+          <div class="min-w-full px-6">
+            <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
+              <p class="text-gray-600 italic mb-4">
+                "Absolutely amazing quality! I love the luxury feel of the bags
+                and shoes. Affordable and elegant."
+              </p>
+              <h3 class="font-bold text-lg text-gray-800">— Sarah M.</h3>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="min-w-full px-6">
+            <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
+              <p class="text-gray-600 italic mb-4">
+                "Abbie Essential gives premium vibes at a very affordable price.
+                Highly recommended!"
+              </p>
+              <h3 class="font-bold text-lg text-gray-800">— Jennifer K.</h3>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="min-w-full px-6">
+            <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
+              <p class="text-gray-600 italic mb-4">
+                "The customer service was excellent, and the products exceeded
+                my expectations."
+              </p>
+              <h3 class="font-bold text-lg text-gray-800">— Grace A.</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <button
+          onclick="prevSlide()"
+          class="hidden absolute top-1/2 left-2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full"
+        >
+          ❮
+        </button>
+        <button
+          onclick="nextSlide()"
+          class="hidden absolute top-1/2 right-2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full"
+        >
+          ❯
+        </button>
+      </div>
+    </section>
+
+    <section class="bg-[#f8f3ef] text-[#3d2b1f] py-12 px-6 md:px-16">
+      <!-- Main Footer Content -->
+      <div
+        class="flex flex-col gap-10 md:flex-row md:justify-between md:items-start"
+      >
+        <!-- Brand Info -->
+        <div class="w-full md:w-1/3">
+          <img class="w-24 h-24 mb-4" src="./images/logo 3.svg" alt="Logo" />
+
+          <p class="text-sm leading-6 max-w-sm mb-5">
+            Your one-stop shop for fashion, beauty and lifestyle essentials that
+            make you look and feel amazing every day.
+          </p>
+
+          <div class="flex gap-4">
+            <a href="#">
+              <img
+                class="w-5 h-5 hover:opacity-70 transition"
+                src="./images/facebook.png"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="w-5 h-5 hover:opacity-70 transition"
+                src="./images/instagram.png"
+                alt="Instagram"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="w-5 h-5 hover:opacity-70 transition"
+                src="./images/whatsapp.png"
+                alt="WhatsApp"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="w-full md:w-1/4">
+          <h3 class="font-[Poppins] text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a href="#" class="hover:text-[#c28b5b] transition">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#c28b5b] transition">Categories</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#c28b5b] transition">Shop</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#c28b5b] transition">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#c28b5b] transition">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="w-full md:w-1/4">
+          <h3 class="font-[Poppins] text-lg font-semibold mb-4">Contact Us</h3>
+          <ul class="space-y-3 text-sm">
+            <li>Email: support@abbieessentials.com</li>
+            <li>Phone: +234 800 000 0000</li>
+            <li>Lagos, Nigeria</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Line -->
+      <div class="border-t border-[#d9cfc7] mt-10 pt-5 text-center text-sm">
+        © 2026 Abbie Essentials. All rights reserved.
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
