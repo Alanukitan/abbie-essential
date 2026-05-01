@@ -619,9 +619,6 @@
   .font-\[Poppins\] {
     font-family: Poppins;
   }
-  .font-\[didot\] {
-    font-family: didot;
-  }
   .font-mono {
     font-family: var(--font-mono);
   }
@@ -702,15 +699,6 @@
   }
   .text-\[\#e17509\] {
     color: #e17509;
-  }
-  .text-\[\#ed953dec\] {
-    color: #ed953dec;
-  }
-  .text-\[\#edc43dec\] {
-    color: #edc43dec;
-  }
-  .text-\[\#f38516ec\] {
-    color: #f38516ec;
   }
   .text-\[lora\] {
     color: lora;
