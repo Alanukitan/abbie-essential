@@ -9,7 +9,9 @@
 
   <body>
     <!-- Header -->
-    <header class="bg-[#f8f1eb] shadow-sm">
+    <header
+      class="bg-[#f8f1eb] sticky top-0 z-50 shadow-lg shadow-amber-200/50"
+    >
       <div class="flex items-center justify-between px-6 md:px-10 py-3">
         <!-- Logo -->
         <div>
@@ -26,27 +28,33 @@
             class="flex gap-x-10 xl:gap-x-12 text-base font-medium font-[Poppins]"
           >
             <li>
-              <a href="#" class="hover:text-orange-500 transition-colors"
+              <a href="#home" class="hover:text-orange-500 transition-colors"
                 >HOME</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-orange-500 transition-colors"
+              <a
+                href="#category"
+                class="hover:text-orange-500 transition-colors"
                 >CATEGORY</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-orange-500 transition-colors"
+              <a href="#shop" class="hover:text-orange-500 transition-colors"
                 >SHOP</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-orange-500 transition-colors"
+              <a
+                href="#about-us"
+                class="hover:text-orange-500 transition-colors"
                 >ABOUT US</a
               >
             </li>
             <li>
-              <a href="#" class="hover:text-orange-500 transition-colors"
+              <a
+                href="#contact-us"
+                class="hover:text-orange-500 transition-colors"
                 >CONTACT</a
               >
             </li>
@@ -84,35 +92,35 @@
         <ul class="flex flex-col font-[Poppins] font-medium text-sm pb-4">
           <li>
             <a
-              href="#"
+              href="#home"
               class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
               >HOME</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="#category"
               class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
               >CATEGORY</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="#shop"
               class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
               >SHOP</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="#about-us"
               class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
               >ABOUT US</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="#contact-us"
               class="block px-6 py-3 border-l-[3px] border-transparent hover:bg-[#eddfc9] hover:border-orange-500 hover:text-orange-500 transition-all"
               >CONTACT</a
             >
@@ -122,7 +130,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hidden relative w-full md:block">
+    <section class="hidden relative w-full md:block" id="home">
       <div class="flex flex-col-reverse md:flex-col">
         <img
           class="h-[500px] w-full object-cover"
@@ -134,7 +142,7 @@
       <div
         class="absolute inset-0 flex flex-col justify-center px-10 md:px-20 bg-black/20"
       >
-        <h3 class="text-[#f38516ec] font-[didot] text-lg">
+        <h3 class="text-[#b16112ec] font-[Didot] text-lg">
           WELCOME TO ABBIE ESSENTIALS
         </h3>
         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
@@ -159,7 +167,10 @@
       </div>
     </section>
 
-    <section class="block relative w-full h-screen md:h-[500px] md:hidden">
+    <section
+      class="block relative w-full h-screen md:h-[500px] md:hidden"
+      id="home"
+    >
       <!-- Background image -->
       <img
         src="./images/mobile bg.png"
@@ -174,7 +185,7 @@
 
       <!-- Text content -->
       <div class="absolute bottom-10 left-0 w-full px-6 md:px-20 z-10">
-        <h3 class="text-[#f38516ec] font-[didot] text-sm md:text-lg mb-2">
+        <h3 class="text-[#bb6712ec] font-[Didot] text-base md:text-lg mb-2">
           WELCOME TO ABBIE ESSENTIALS
         </h3>
 
@@ -199,7 +210,7 @@
     </section>
 
     <!-- What we offer Section -->
-    <section class="py-4 px-4 bg-[#f8f1eb]">
+    <section class="py-4 px-4 bg-[#f8f1eb]" id="category">
       <div class="text-center py-3">
         <div class="text-lg font-mono text-orange-500 font-bold py-2">
           WHAT WE OFFER
@@ -701,7 +712,7 @@
     </section>
 
     <!--Why Shop with us-->
-    <section class="py-10 bg-[#f8f1eb]">
+    <section class="py-10 bg-[#f8f1eb]" id="shop">
       <div class="text-center mb-8">
         <h2
           class="font-[Poppins] font-extrabold text-2xl inline-block relative"
@@ -821,7 +832,7 @@
     </section>
 
     <!--Customer Review-->
-    <section class="py-10 bg-[#f3ece6]">
+    <section class="py-10 bg-[#f3ece6]" id="about-us">
       <!-- Heading -->
       <div class="text-center mb-8">
         <h2
@@ -890,7 +901,10 @@
       </div>
     </section>
 
-    <section class="bg-[#f8f3ef] text-[#3d2b1f] py-12 px-6 md:px-16">
+    <section
+      class="bg-[#f8f3ef] text-[#3d2b1f] py-12 px-6 md:px-16"
+      id="contact-us"
+    >
       <!-- Main Footer Content -->
       <div
         class="flex flex-col gap-10 md:flex-row md:justify-between md:items-start"
