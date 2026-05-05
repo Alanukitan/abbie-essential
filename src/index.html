@@ -6,6 +6,50 @@
     <link href="./output.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Abbie Essentials</title>
+    <style>
+      @keyframes scroll {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .animate-scroll {
+        animation: scroll 15s linear infinite;
+      }
+
+      .tab-btn {
+        padding: 10px 20px;
+        border-radius: 999px;
+        background: #eee;
+        transition: 0.3s;
+      }
+
+      .tab-btn.active {
+        background: #e17509;
+        color: white;
+      }
+
+      .card {
+        overflow: hidden;
+        border-radius: 12px;
+        background: white;
+        cursor: pointer;
+      }
+
+      .card-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+
+      .card:hover .card-img {
+        transform: scale(1.1);
+      }
+    </style>
   </head>
 
   <body>
@@ -160,7 +204,7 @@
 
         <div>
           <button
-            class="bg-[#e17509] text-white text-[lora] px-6 py-3 rounded-full hover:bg-orange-600"
+            class="bg-[#e17509] text-white font-[Lora] px-6 py-3 rounded-full hover:bg-orange-600"
           >
             Explore Products
           </button>
@@ -210,6 +254,133 @@
       </div>
     </section>
 
+    <section class="py-16 bg-[#f8f3ef]">
+      <!-- Heading -->
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-[#3d2b1f]">
+          Explore Our Collections
+        </h2>
+        <p class="text-gray-600 mt-2">
+          Discover varieties of our premium essentials
+        </p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex justify-center gap-4 mb-10 flex-wrap">
+        <button class="tab-btn active" data-tab="bags">Heels</button>
+        <button class="tab-btn" data-tab="shoes">Shoes</button>
+        <button class="tab-btn" data-tab="clothes">Wrist Watch</button>
+        <button class="tab-btn" data-tab="accessories">Bags</button>
+      </div>
+
+      <!-- Content -->
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Heels-->
+        <div
+          class="tab-content grid grid-cols-2 md:grid-cols-4 gap-6"
+          id="bags"
+        >
+          <div class="card">
+            <img src="./images/heel xm 1.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/heel xm2.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/heel xm3.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/heel xm4.jpeg" class="card-img" />
+          </div>
+        </div>
+
+        <!-- Shoes -->
+        <div
+          class="tab-content hidden grid grid-cols-2 md:grid-cols-5 gap-6"
+          id="shoes"
+        >
+          <div class="card">
+            <img src="./images/shoes xm1.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/offfice-s.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/shoes xm2.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/shoes xm 4.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/shoe xm5.jpeg" class="card-img" />
+          </div>
+        </div>
+
+        <!-- Watch -->
+        <div
+          class="tab-content hidden grid grid-cols-2 md:grid-cols-4 gap-6"
+          id="clothes"
+        >
+          <div class="card">
+            <img src="./images/watch 1.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/watch 2.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/watch 3.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/watch 4.jpeg" class="card-img" />
+          </div>
+        </div>
+
+        <!-- Bags -->
+        <div
+          class="tab-content hidden grid grid-cols-2 md:grid-cols-4 gap-6"
+          id="accessories"
+        >
+          <div class="card">
+            <img src="./images/bag xm4.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/bag xm 2.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/bag xm.jpeg" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./images/bag xm3.jpeg" class="card-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <section class="overflow-hidden border-gray-200 py-4">
+      <div
+        class="gap-12 ml-12 whitespace-nowrap flex animate-scroll font-[Poppins]"
+      >
+        <span class="text-sm tracking-[0.3em] uppercase"
+          >Luxury for everyone</span
+        >
+        <span class="text-sm tracking-[0.3em] uppercase">Premium quality</span>
+        <span class="text-sm tracking-[0.3em] uppercase"
+          >Affordable elegance</span
+        >
+        <span class="text-sm tracking-[0.3em] uppercase"
+          >Luxury for everyone</span
+        >
+        <span class="text-sm tracking-[0.3em] uppercase">Premium quality</span>
+        <span class="text-sm tracking-[0.3em] uppercase"
+          >Luxury for everyone</span
+        >
+        <span class="text-sm tracking-[0.3em] uppercase">Premium quality</span>
+        <span class="text-sm tracking-[0.3em] uppercase"
+          >Affordable elegance</span
+        >
+        <span class="text-sm tracking-[0.3em] uppercase">Abbie Essentials</span>
+      </div>
+    </section>
     <!-- What we offer Section -->
     <section class="py-4 px-4 bg-[#f8f1eb]" id="category">
       <div class="text-center py-3">
@@ -261,7 +432,7 @@
             class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
           >
             <img
-              src="./images/bags.avif"
+              src="./images/main bag.jpeg"
               alt="Bags"
               class="w-full h-full object-cover"
             />
@@ -465,7 +636,7 @@
             class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
           >
             <img
-              src="./images/pngtree-track-shoes-png-image_6880451.png"
+              src="./images/shoes-page.jpeg"
               alt="Bags"
               class="w-full h-full object-cover"
             />
@@ -633,7 +804,7 @@
             class="aspect-square bg-[#E8D8C4] flex items-center justify-center overflow-hidden"
           >
             <img
-              src="./images/ai-generated-black-patent-high-heel-shoes-on-transparent-background-stock-png.webp"
+              src="./images/heel xm.jpeg"
               alt="Bags"
               class="w-full h-full object-cover"
             />
@@ -942,6 +1113,43 @@
         </button>
       </div>
     </section>
+    <!--Whatsapp-->
+    <section
+      class="relative bg-[#0b0b0c] py-20 px-6 text-center overflow-hidden"
+    >
+      <!-- Animated gradient glow -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-orange-500/20 via-transparent to-orange-500/20 blur-2xl opacity-60 animate-pulse"
+      ></div>
+
+      <div class="relative z-10 max-w-2xl mx-auto">
+        <!-- Label -->
+        <p class="text-orange-400 tracking-[0.35em] text-xs mb-5 uppercase">
+          Ready To Order
+        </p>
+
+        <!-- Heading -->
+        <h2
+          class="text-white text-3xl md:text-5xl font-semibold leading-tight mb-5"
+        >
+          Get Your Favorites <br class="hidden md:block" />
+          Delivered With Ease
+        </h2>
+
+        <!-- Description -->
+        <p class="text-gray-400 text-sm md:text-base mb-10 leading-relaxed">
+          Discover premium fashion, beauty, and lifestyle essentials curated
+          just for you. Fast, simple, and stress-free ordering.
+        </p>
+
+        <!-- CTA Button -->
+        <button
+          class="bg-gradient-to-r from-[#f59e0b] to-[#fb923c] text-black font-semibold px-10 py-4 rounded-full text-sm tracking-wide hover:scale-110 hover:shadow-2xl hover:shadow-orange-400/40 transition-all duration-300"
+        >
+          <a href="wa.me/+2349079246203"> Start Ordering Now </a>
+        </button>
+      </div>
+    </section>
 
     <section
       class="bg-[#f8f3ef] text-[#3d2b1f] py-12 px-6 md:px-16"
@@ -961,24 +1169,37 @@
           </p>
 
           <div class="flex gap-4">
-            <a href="#">
+            <a
+              href="https://www.facebook.com/share/1DktyjJcko/?mibextid=wwXIfr"
+            >
               <img
                 class="w-5 h-5 hover:opacity-70 transition"
                 src="./images/facebook.png"
                 alt="Facebook"
               />
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/abbieessentials?igsh=NzFkYzNlY3RibW94&utm_source=qr"
+            >
               <img
                 class="w-5 h-5 hover:opacity-70 transition"
                 src="./images/instagram.png"
                 alt="Instagram"
               />
             </a>
-            <a href="#">
+            <a href="wa.me/+2349079246203">
               <img
                 class="w-5 h-5 hover:opacity-70 transition"
                 src="./images/whatsapp.png"
+                alt="WhatsApp"
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com/@abbie_essentials?_r=1&_d=f2bljbh283ga7m&sec_uid=MS4wLjABAAAAImJ-SH8sTt25JSryI6lp3uh9gr4jdQWmCpMCCmygX4IAj4ddtECFAiNP89i6dLuC&share_author_id=7153697784293327874&sharer_language=en&source=h5_m&u_code=e4a01424bmh74c&item_author_type=1&utm_source=copy&tt_from=copy&enable_checksum=1&utm_medium=ios&share_link_id=EA3FA9C6-ED14-4BE1-BB25-A50577865854&user_id=7153697784293327874&sec_user_id=MS4wLjABAAAAImJ-SH8sTt25JSryI6lp3uh9gr4jdQWmCpMCCmygX4IAj4ddtECFAiNP89i6dLuC&social_share_type=4&ug_btm=b8727,b0&utm_campaign=client_share&share_app_id=1233"
+            >
+              <img
+                class="w-5 h-5 hover:opacity-70 transition"
+                src="./images/tiktok.png"
                 alt="WhatsApp"
               />
             </a>
@@ -1011,9 +1232,17 @@
         <div class="w-full md:w-1/4">
           <h3 class="font-[Poppins] text-lg font-semibold mb-4">Contact Us</h3>
           <ul class="space-y-3 text-sm">
-            <li>Email: support@abbieessentials.com</li>
-            <li>Phone: +234 800 000</li>
+            <li class="hover:text-[#c28b5b] transition">
+              <a href="abbytomisin@gmail.com">Email: abbytomisin@gmail.com</a>
+            </li>
+            <li class="hover:text-[#c28b5b] transition">
+              <a href="wa.me/+2349079246203">Phone: +234 907 924 6203</a>
+            </li>
             <li>Lagos, Nigeria</li>
+            <p>
+              Working Hour :
+              <span class="font-bold font-sans"> Mon - Sat </span>, 8am - 9pm
+            </p>
           </ul>
         </div>
       </div>

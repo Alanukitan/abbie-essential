@@ -88,3 +88,20 @@ mobileMenu.querySelectorAll("a").forEach((link) => {
     hamburger.setAttribute("aria-expanded", "false");
   });
 });
+const buttons = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    buttons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const target = btn.getAttribute("data-tab");
+
+    contents.forEach((content) => {
+      content.classList.add("hidden");
+    });
+
+    document.getElementById(target).classList.remove("hidden");
+  });
+});
